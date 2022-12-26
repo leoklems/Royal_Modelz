@@ -11,7 +11,18 @@ $(document).ready(function() {
         event.preventDefault();
         $('.hm_nav_cat').toggleClass('hm_nav_cat_triggered');
         // $('.fa-bars').toggleClass('fa-times');
-        // $('.fa-arrow-right').toggleClass('fa-arrow-down');
+        // $('.fa-angle-right').toggleClass('fa-angle-down');
+        // if ($(this).children[0].attr('class') == '.fas fa-angle-right') {
+        //     $(this.children[0]).attr('class', '.fas fa-angle-down');
+        // } else {
+        //     $(this.children[0]).attr('class', '.fas fa-angle-right');
+        // }
+
+        if ($('#hm_nav_cat_outs i').attr('class') == 'fas fa-arrow-right') {
+            $('#hm_nav_cat_outs i').attr('class', 'fas fa-arrow-down');
+        } else {
+            $('#hm_nav_cat_outs i').attr('class', 'fas fa-arrow-right');
+        }
 
     })
     $("#hm_nav_cat_items").click(function(event) {
